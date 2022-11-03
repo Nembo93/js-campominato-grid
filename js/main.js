@@ -10,6 +10,11 @@ const gameLevel = document.getElementById(`level`);
 const playStart = document.getElementById(`play_start`);
 playStart.addEventListener(`click`, function(){
 
+    // Definire variabili per creazione celle
+    let easyGameCell = 100;
+    let mediumGameCell = 81;
+    let hardgameCell = 49;
+
     if (gameLevel.value === `facile`){
         console.log(`facile`);
     } else if (gameLevel.value === `medio`){
@@ -18,7 +23,7 @@ playStart.addEventListener(`click`, function(){
         console.log(`difficile`);
     }
 
-    for( i = 1; i <= 100; i++){
+    for( i = 1; i <= easyGameCell; i++){
         const boardCell = document.createElement(`div`);
         boardCell.classList.add(`cell`);
         boardCell.innerHTML = i;
