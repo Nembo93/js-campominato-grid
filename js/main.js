@@ -18,7 +18,7 @@ boardContainer.innerHTML = ``;
         console.log(`facile`);
         for( i = 1; i <= easyGameCell; i++){
             const boardCell = document.createElement(`div`);
-            boardCell.classList.add(`cell`);
+            boardCell.classList.add(`cell`, `easy_cell`);
             boardCell.innerHTML = i;
             boardContainer.append(boardCell);
             boardCell.addEventListener(`click`, function(){
@@ -30,7 +30,7 @@ boardContainer.innerHTML = ``;
         console.log(`medio`);
         for( i = 1; i <= mediumGameCell; i++){
             const boardCell = document.createElement(`div`);
-            boardCell.classList.add(`cell`);
+            boardCell.classList.add(`cell`, `medium_cell`);
             boardCell.innerHTML = i;
             boardContainer.append(boardCell);
             boardCell.addEventListener(`click`, function(){
@@ -42,7 +42,7 @@ boardContainer.innerHTML = ``;
         console.log(`difficile`);
         for( i = 1; i <= hardGameCell; i++){
             const boardCell = document.createElement(`div`);
-            boardCell.classList.add(`cell`);
+            boardCell.classList.add(`cell`, `hard_cell`);
             boardCell.innerHTML = i;
             boardContainer.append(boardCell);
             boardCell.addEventListener(`click`, function(){
