@@ -5,6 +5,7 @@
 }
 
 .container{
+    margin: auto;
     max-width: 700px;
     background-color: yellow;
     border: 1px solid red;
@@ -12,5 +13,12 @@
     flex-wrap: wrap;
 }
 .cell{
-    max-width: calc(100% / 10);
+    width: calc(100% / 10);
+    height: 50px;
+    background-color: azure;
+    border: 1px solid blue;
+}
+
+.clicked{
+    background-color: blue;
 }

@@ -4,9 +4,18 @@
 
 const boardContainer = document.querySelector(`.container`);
 
-for( i = 1; i <= 100; i++){
-    const boardCell = document.createElement(`div`)
-    boardCell.classList.add(`.cell`);
-    boardCell.innerHTML = i;
-    boardContainer.append(boardCell);
-}
+
+
+const playStart = document.getElementById(`#play_start`);
+playStart.addEventListener(`click`, function(){
+    for( i = 1; i <= 100; i++){
+        const boardCell = document.createElement(`div`);
+        boardCell.classList.add(`cell`);
+        boardCell.innerHTML = i;
+        boardContainer.append(boardCell);
+        boardCell.addEventListener(`click`, function(){
+            console.log(this.innerHTML);
+            this.classList.add(`clicked`);
+        })
+    }
+})
