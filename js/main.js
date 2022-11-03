@@ -5,14 +5,19 @@
 const boardContainer = document.querySelector(`.container`);
 
 const gameLevel = document.getElementById(`level`);
-if (gameLevel.value === `facile`){
-    console.log(`facile`);
-} else{
-    console.log(`no`);
-}
+
 
 const playStart = document.getElementById(`play_start`);
 playStart.addEventListener(`click`, function(){
+
+    if (gameLevel.value === `facile`){
+        console.log(`facile`);
+    } else if (gameLevel.value === `medio`){
+        console.log(`medio`);
+    } else{
+        console.log(`difficile`);
+    }
+
     for( i = 1; i <= 100; i++){
         const boardCell = document.createElement(`div`);
         boardCell.classList.add(`cell`);
