@@ -6,7 +6,7 @@ const boardContainer = document.querySelector(`.container`);
 
 
 
-const playStart = document.getElementById(`#play_start`);
+const playStart = document.getElementById(`play_start`);
 playStart.addEventListener(`click`, function(){
     for( i = 1; i <= 100; i++){
         const boardCell = document.createElement(`div`);
@@ -19,3 +19,4 @@ playStart.addEventListener(`click`, function(){
         })
     }
 })
+
