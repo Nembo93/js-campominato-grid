@@ -4,7 +4,12 @@
 
 const boardContainer = document.querySelector(`.container`);
 
-
+const gameLevel = document.getElementById(`level`);
+if (gameLevel.value === `facile`){
+    console.log(`facile`);
+} else{
+    console.log(`no`);
+}
 
 const playStart = document.getElementById(`play_start`);
 playStart.addEventListener(`click`, function(){
@@ -19,4 +24,6 @@ playStart.addEventListener(`click`, function(){
         })
     }
 })
+
+
 
